@@ -1,5 +1,8 @@
 package com.code;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.testng.annotations.Test;
 
 public class CodePractice {
@@ -52,7 +55,19 @@ public class CodePractice {
 	@Test
 	public void findNumberPosition() {
 		int[] array1 = {2,5,1,9,2};
+		int num = 9;
 		
+		List<Integer> array2 = new ArrayList<Integer>();
+		List<Integer> position = new ArrayList<Integer>();
+		
+		for(int i = 0; i < array1.length; i++) {
+			if(array1[i] == num) {
+				array2.add(array1[i]);
+				position.add(i + 1);
+			}
+		}
+		System.out.println("Number " + num + " is displayed in the position(s):" + position);
+		System.out.println("Number " + num + " is displayed " + position.size() + " time(s)");
 	}
 	
 }
