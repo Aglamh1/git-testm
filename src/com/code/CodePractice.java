@@ -70,4 +70,9 @@ public class CodePractice {
 		System.out.println("Number " + num + " is displayed " + position.size() + " time(s)");
 	}
 	
+	@Test
+	public void removeNumber() {
+		
+	}
+	
 }
