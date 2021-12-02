@@ -74,7 +74,7 @@ public class CodePractice {
 	public void removeNumber() {
 		int[] array1 = {2,5,1,9,2};
 		int num = 5;
-		int j = 0;
+		int z = 0;
 		
 		List<Integer> array2 = new ArrayList<Integer>();
 		
@@ -83,14 +83,42 @@ public class CodePractice {
 		}
 		for(int num2 : array2) {
 			if(num2 == num) {
-				//array2.remove(j);
+				//array2.remove(z);
 				System.out.println("remove " + num2);
 			}
-			j++;
+			z++; 
 		}
 		System.out.println(array2);
 	}
 	
-	
+	@Test
+	public void countRepeatedNumbers() {
+		int[] array1 = {2,5,1,9,2};
+		int num = 2;
+		
+		List<Integer> array2 = new ArrayList<Integer>();
+		
+		int count;
+		for(int i = 0; i < array1.length; i++) {
+			count = 0;
+			for(int j = i; j < array1.length; j++) {
+				if(num == array1[j]) {
+					count++;
+				}
+			}
+			if(count < 2) {
+				array2.add(array1[i]);
+			}
+		}
+		for(int array3 : array2) {
+			count = 0;
+			for(int z = 0; z < array1.length; z++) {
+				if(array3 == array1[z]) {
+					count++;
+				}
+			}
+			System.out.println(array3 + " is repeated " + count + " times");
+		}
+	}
 	
 }
