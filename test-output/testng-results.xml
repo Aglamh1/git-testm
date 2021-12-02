@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-01T15:03:40 CST" name="Default suite" finished-at="2021-12-01T15:03:47 CST" duration-ms="6273">
+  <suite started-at="2021-12-02T11:59:55 CST" name="Default suite" finished-at="2021-12-02T11:59:55 CST" duration-ms="62">
     <groups>
     </groups>
-    <test started-at="2021-12-01T15:03:40 CST" name="Default test" finished-at="2021-12-01T15:03:47 CST" duration-ms="6273">
-      <class name="com.amazon.AmazonHomePageValidations">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.AmazonHomePageValidations@7bab3f1a]" started-at="2021-12-01T15:03:40 CST" name="setUp" finished-at="2021-12-01T15:03:46 CST" duration-ms="6141" status="PASS">
+    <test started-at="2021-12-02T11:59:55 CST" name="Default test" finished-at="2021-12-02T11:59:55 CST" duration-ms="62">
+      <class name="com.code.CodePractice">
+        <test-method signature="countRepeatedNumbers()[pri:0, instance:com.code.CodePractice@22ef9844]" started-at="2021-12-02T11:59:55 CST" name="countRepeatedNumbers" finished-at="2021-12-02T11:59:55 CST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateFooterElements()[pri:0, instance:com.amazon.AmazonHomePageValidations@7bab3f1a]" started-at="2021-12-01T15:03:46 CST" name="validateFooterElements" finished-at="2021-12-01T15:03:47 CST" duration-ms="98" status="PASS">
+        </test-method> <!-- countRepeatedNumbers -->
+        <test-method signature="deleteLetters()[pri:0, instance:com.code.CodePractice@22ef9844]" started-at="2021-12-02T11:59:55 CST" name="deleteLetters" finished-at="2021-12-02T11:59:55 CST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateFooterElements -->
-      </class> <!-- com.amazon.AmazonHomePageValidations -->
+        </test-method> <!-- deleteLetters -->
+        <test-method signature="findNumberPosition()[pri:0, instance:com.code.CodePractice@22ef9844]" started-at="2021-12-02T11:59:55 CST" name="findNumberPosition" finished-at="2021-12-02T11:59:55 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findNumberPosition -->
+        <test-method signature="removeNumber()[pri:0, instance:com.code.CodePractice@22ef9844]" started-at="2021-12-02T11:59:55 CST" name="removeNumber" finished-at="2021-12-02T11:59:55 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeNumber -->
+        <test-method signature="reverseSentence()[pri:0, instance:com.code.CodePractice@22ef9844]" started-at="2021-12-02T11:59:55 CST" name="reverseSentence" finished-at="2021-12-02T11:59:55 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reverseSentence -->
+      </class> <!-- com.code.CodePractice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
