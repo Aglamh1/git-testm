@@ -72,7 +72,25 @@ public class CodePractice {
 	
 	@Test
 	public void removeNumber() {
+		int[] array1 = {2,5,1,9,2};
+		int num = 5;
+		int j = 0;
 		
+		List<Integer> array2 = new ArrayList<Integer>();
+		
+		for(int i = 0; i < array1.length; i++) {
+			array2.add(array1[i]);
+		}
+		for(int num2 : array2) {
+			if(num2 == num) {
+				//array2.remove(j);
+				System.out.println("remove " + num2);
+			}
+			j++;
+		}
+		System.out.println(array2);
 	}
+	
+	
 	
 }
