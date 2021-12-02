@@ -121,4 +121,9 @@ public class CodePractice {
 		}
 	}
 	
+	@Test
+	public void aPrintHi() {
+		System.out.println("Hi");
+	}
+	
 }
