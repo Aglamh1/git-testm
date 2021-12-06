@@ -74,8 +74,8 @@ public class GrandPrix {
         //System.out.println(map);
         System.out.println(map.values());
         
-        gson gson = new gsonbuilder().create();
-        GPDeserialize address = gson.fromjson(json, GPDeserialize.class);
+        //gson gson = new gsonbuilder().create();
+        //GPDeserialize address = gson.fromjson(json, GPDeserialize.class);
         
         
         //List<GrandPrix> list = objectMapper.readValue(body, new TypeReference<List<GrandPrix>>(){});
