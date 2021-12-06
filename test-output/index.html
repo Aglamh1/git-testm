@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.code.CodePractice" class="method navigator-link" hash-for-method="aPrintHi">aPrintHi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.code.CodePractice" class="method navigator-link" hash-for-method="countRepeatedNumbers">countRepeatedNumbers</a> <!-- method navigator-link -->
@@ -147,6 +152,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="aPrintHi">
+                  </a> <!-- aPrintHi -->
+                  <span class="method-name">aPrintHi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="countRepeatedNumbers">
                   </a> <!-- countRepeatedNumbers -->
                   <span class="method-name">countRepeatedNumbers</span>
@@ -185,7 +197,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/lw/7f2h0t7x611flwkcphr3pz480000gp/T/testng-eclipse--676070540/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/lw/7f2h0t7x611flwkcphr3pz480000gp/T/testng-eclipse-1890589244/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -234,27 +246,31 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'countRepeatedNumbers')
+data.setCell(0, 1, 'aPrintHi')
 data.setCell(0, 2, 'com.code.CodePractice')
-data.setCell(0, 3, 9);
+data.setCell(0, 3, 11);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'removeNumber')
+data.setCell(1, 1, 'findNumberPosition')
 data.setCell(1, 2, 'com.code.CodePractice')
-data.setCell(1, 3, 2);
+data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'deleteLetters')
 data.setCell(2, 2, 'com.code.CodePractice')
-data.setCell(2, 3, 2);
+data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'findNumberPosition')
+data.setCell(3, 1, 'reverseSentence')
 data.setCell(3, 2, 'com.code.CodePractice')
 data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'reverseSentence')
+data.setCell(4, 1, 'countRepeatedNumbers')
 data.setCell(4, 2, 'com.code.CodePractice')
 data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'removeNumber')
+data.setCell(5, 2, 'com.code.CodePractice')
+data.setCell(5, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -287,24 +303,28 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.code.CodePractice</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">countRepeatedNumbers</span>
+                <span class="method-name">aPrintHi</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">countRepeatedNumbers</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">deleteLetters</span>
-                <span class="method-start">12 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">findNumberPosition</span>
-                <span class="method-start">16 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">removeNumber</span>
                 <span class="method-start">18 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">findNumberPosition</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeNumber</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">reverseSentence</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

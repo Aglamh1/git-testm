@@ -1,7 +1,9 @@
 package com.code;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.testng.annotations.Test;
 
@@ -123,7 +125,32 @@ public class CodePractice {
 	
 	@Test
 	public void aPrintHi() {
-		System.out.println("Hi");
+
+		String phrase = "buffalo from Buffalo New York who intimidate other buffalo from Buffalo New York are themselves intimidated by buffalo from Buffalo New York";
+        String[] separatedPhrase = phrase.split(" ");
+        System.out.printf("Original phrase: %n%s%n", phrase);
+        
+        //  First convert array into an ArrayList for flexibility
+        List<String> phraseAsList = new ArrayList<String>(Arrays.asList(separatedPhrase));
+        
+        //  Use a stream to get distinct values
+        String noDups = phraseAsList
+            .stream()
+            .distinct()
+            .collect(Collectors.joining(" "));
+        
+        System.out.printf("Phrase without dups: %n%s%n", noDups);
+        Integer[] arrDigits = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        List<Integer> digits = Arrays.asList(arrDigits);
+        System.out.println("\n\n\n ========================= \n");
+        System.out.printf("Original list of digits: %n%s%n", digits);
+        List<Integer> sortedDigits = digits
+            .stream()
+            .sorted()
+            .collect(Collectors.toList());
+        System.out.printf("Sorted list of digits: %n%s%n", sortedDigits);
+        
+	
 	}
 	
 }

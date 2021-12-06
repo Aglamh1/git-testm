@@ -3,26 +3,23 @@ package com.api;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
-
 import java.util.List;
 import java.util.Map;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.JsonObject;
-
 import static org.hamcrest.Matchers.*;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
-
+import com.google.gson.gson;
+import com.google.gson.gsonbuilder;
 
 public class GrandPrix {
 
@@ -76,6 +73,9 @@ public class GrandPrix {
         Map<String, Object> map = objectMapper.readValue(body, new TypeReference<Map<String,Object>>(){});
         //System.out.println(map);
         System.out.println(map.values());
+        
+        gson gson = new gsonbuilder().create();
+        GPDeserialize address = gson.fromjson(json, GPDeserialize.class);
         
         
         //List<GrandPrix> list = objectMapper.readValue(body, new TypeReference<List<GrandPrix>>(){});
