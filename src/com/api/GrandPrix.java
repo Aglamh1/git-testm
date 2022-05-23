@@ -18,6 +18,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
+import org.json.JSONObject;
 //import com.google.gson.gson;
 //import com.google.gson.gsonbuilder;
 
@@ -68,6 +69,13 @@ public class GrandPrix {
         			.assertThat().body(containsString("Albert Park Grand Prix Circuit"))
         			//.body("total", equalTo("20"))
         			.and().extract().body().asString();
+        
+        //Deserialization Practice Starts here
+        
+        JSONObject user = new JSONObject(body);
+        System.out.println(user.get("MRData"));
+        
+        //Deserialization Practice Ends here
         
         ObjectMapper objectMapper = new ObjectMapper();
         Map<String, Object> map = objectMapper.readValue(body, new TypeReference<Map<String,Object>>(){});

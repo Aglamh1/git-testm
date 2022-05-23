@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.code.CodePractice">
+      <class name="com.amazon.AmazonLoginScreen">
         <methods>
-          <include name="removeNumber"/>
+          <include name="checkLoginScreen"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.code.CodePractice -->
+      </class> <!-- com.amazon.AmazonLoginScreen -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
