@@ -27,8 +27,6 @@ public class AmazonLoginScreen {
 	public void checkLoginScreen() {
 		
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		//AmazonHomepage loginDrawer = new AmazonHomepage(driver);
-		
 		driver.findElement(By.xpath("//a[@id='nav-link-accountList']")).click();
 		
 	}
